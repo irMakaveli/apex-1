@@ -2,23 +2,12 @@
 #include <sstream>
 #include <string>
 #include <iomanip>
-#include <limits>
-#include <limits.h>
+#include "header.hpp"
 #include <vector>
-#include <queue>
-#include <climits>
+
 using namespace std;
-struct Matrix{
-    string name;
-    bool is_integer = false;
-    int row,column;
-    bool isfull =false;//matrix size
-    union type{//matrix type
-        int ** int_memeber;
-        string ** str_member;
-    }matrixType;
-};
-void help(){
+
+ void help(){
     cout<<"enetr your command:"<<endl
         <<"add matrix : adding a matrix"<<endl
         <<"like :\nadd matrix matrix_name"<<endl
@@ -735,6 +724,12 @@ void inversing(Matrix * mat,vector<string >name,int & size)
                     }
                     str.push_back(parametrs);
                     mat[size]=addMatrix(str , mat[size]);//add matrix
+                    size++;
+                    vector<string>str2;
+                    str2.push_back("inverse");
+                    str2.push_back(str[2]);
+                    inversing(mat,str2,size);//inverse new matrix
+                    return;
                 }
                 if(mat[i].is_integer)//inverse integer matrix
                 {

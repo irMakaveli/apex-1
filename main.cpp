@@ -2,8 +2,8 @@
 #include <sstream>
 #include <string>
 #include <iomanip>
-#include "header.h"
-#include "function.cpp"
+
+#include "header.hpp"
 #include <vector>
 
 using namespace std;
