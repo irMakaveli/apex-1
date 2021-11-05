@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/system64/html/app/function.cpp
+iostream
+-
+sstream
+-
+string
+-
+iomanip
+-
+header.hpp
+/home/system64/html/app/header.hpp
+vector
+-
+
+/home/system64/html/app/header.hpp
+vector
+-
+string
+-
+
+/home/system64/html/app/main.cpp
+iostream
+-
+sstream
+-
+string
+-
+iomanip
+-
+header.hpp
+/home/system64/html/app/header.hpp
+vector
+-
+

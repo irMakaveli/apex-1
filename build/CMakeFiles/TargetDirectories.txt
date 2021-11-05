@@ -1,0 +1,3 @@
+/home/system64/html/app/build/CMakeFiles/rebuild_cache.dir
+/home/system64/html/app/build/CMakeFiles/edit_cache.dir
+/home/system64/html/app/build/CMakeFiles/app.dir
